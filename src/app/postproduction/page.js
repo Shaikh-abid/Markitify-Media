@@ -17,21 +17,21 @@ const Production = () => {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto backdrop-opacity-10 h-[584px] w-full lg:w-[1341px] mt-24 bg-[linear-gradient(to_right,#80808012_3px,transparent_6px),linear-gradient(to_bottom,#80808012_3px,transparent_6px)] bg-[size:66px_66px]">
-        <div className="flex lg:flex-row lg:w-full pt-16 lg:justify-between lg:items-center flex-col w-full items-center lg:text-left text-center">
+      <div className="container mx-auto backdrop-opacity-10 h-auto w-full lg:w-[1341px] mt-24 bg-[linear-gradient(to_right,#80808012_3px,transparent_6px),linear-gradient(to_bottom,#80808012_3px,transparent_6px)] bg-[size:66px_66px] p-6 lg:p-0">
+        <div className="flex flex-col lg:flex-row lg:w-full pt-8 lg:pt-16 lg:justify-between lg:items-center w-full items-center text-center lg:text-left">
           {/* Heading Section */}
           <div className="mb-8 lg:mb-0">
-            <h1 className="text-4xl  lg:text-5xl font-medium lg:w-[640px] lg:h-[219px] leading-tight tracking-wide  lg:pl-3">
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-medium lg:w-[640px] lg:h-[219px] leading-snug tracking-wide lg:pl-3">
               We Shape Visions, <br /> Craft Stories—Through <br /> Design and Motion.
             </h1>
-            <p className="text-sm lg:text-[16px]  lg:h-[99px] lg:w-[462px] lg:mt-8  font-medium mt-4 lg:pl-3">
-              We refine your content with expert editing, sound design, and
-              visuals, delivering a polished and professional final product.
+            <p className="text-sm sm:text-base lg:text-[16px] lg:h-[99px] lg:w-[462px] lg:mt-8 font-medium mt-4 lg:pl-3">
+              We refine your content with expert editing, sound design, and visuals,
+              delivering a polished and professional final product.
             </p>
           </div>
 
           {/* Image Section */}
-          <div className="h-[300px] sm:h-[343px] w-[300px] sm:w-[343px] lg:w-[612px] lg:h-[583px] container mx-auto">
+          <div className="h-[240px] sm:h-[300px] w-[240px] sm:w-[300px] lg:w-[612px] lg:h-[583px] mx-auto lg:mx-0">
             <Image
               src={postlogo}
               alt="logo"
@@ -43,67 +43,69 @@ const Production = () => {
         </div>
       </div>
 
-      <div className="container mx-auto  h-[584px] lg:w-[1341px] mt-56 flex lg:flex-row lg:justify-center  flex-col gap-12">
-        <div className="lg:w-[421px] lg:h-[547px] w-[343px] h-[480px]  bg-gradient-to-b from-[#000000] to-[#393939] text-white  shadow-2xl rounded-xl p-6">
+      <div className="container mx-auto h-auto lg:w-[1341px] mt-24 sm:mt-16 md:mt-20 flex lg:flex-row lg:justify-center flex-col gap-12 px-4">
+        {/* Graphic Designing Card */}
+        <div className="lg:w-[421px] lg:h-[547px] w-full max-w-[343px] h-auto bg-gradient-to-b from-[#000000] to-[#393939] text-white shadow-2xl rounded-xl p-6">
           {/* Icon Section */}
-          <div className="flex justify-start mb-4 ">
+          <div className="flex justify-start mb-4">
             <div className="bg-gray-100 p-3 rounded-full">
               <Image src={vector} alt="vector" />
             </div>
           </div>
 
           {/* Title Section */}
-          <h2 className="lg:text-[22px] font-semibold text-white mb-2">
+          <h2 className="lg:text-[22px] text-xl font-semibold text-white mb-2">
             Graphic Designing
           </h2>
-          <p className="text-sm text-[#A1A1A1] mb-16 lg:text-[14px]  tracking-normal  font-medium h-[40px] w-[301px]">
-            Building brands that go beyond the ordinary, powered by innovation
-            and bold ideas."
+          <p className="text-sm text-[#A1A1A1] mb-12 lg:mb-16 tracking-normal font-medium h-auto lg:h-[40px] lg:w-[301px]">
+            Building brands that go beyond the ordinary, powered by innovation and bold ideas.
           </p>
 
           {/* Button */}
-          <div className="flex justify-center ">
-            <button className="w-[296px] h-[39px]  bg-[#FFFFFF] text-[#000000] py-2 rounded-lg text-sm font-medium mb-4 ">
+          <div className="flex justify-center">
+            <button className="w-full max-w-[296px] h-[39px] bg-[#FFFFFF] text-[#000000] py-2 rounded-lg text-sm font-medium">
               Let’s Connect
             </button>
           </div>
 
           {/* Features List */}
-          <ul className="text-sm  space-y-6 font-medium  text-[#E0E0E0] mt-4 lg:text-[15px]">
+          <ul className="text-sm space-y-6 font-medium text-[#E0E0E0] mt-8">
             <li>Social media posts</li>
-            <li>background Design</li>
+            <li>Background Design</li>
             <li>Thumbnail Design</li>
             <li>Flyers Design</li>
             <li>Logo / Identity Design</li>
           </ul>
         </div>
 
-        <div className="lg:w-[421px] lg:h-[547px] w-[343px] h-[480px] bg-gradient-to-b from-[#000000] to-[#393939] text-white  shadow-2xl rounded-xl p-6 font-sans">
+        {/* Development Card */}
+        <div className="lg:w-[421px] lg:h-[547px] w-full max-w-[343px] h-auto bg-gradient-to-b from-[#000000] to-[#393939] text-white shadow-2xl rounded-xl p-6">
           {/* Icon Section */}
-          <div className="flex justify-start mb-4 ">
+          <div className="flex justify-start mb-4">
             <div className="bg-[#5A5A5A] p-3 rounded-full">
-              <Image src={videoediting} />
+              <Image src={videoediting} alt="video editing" />
             </div>
           </div>
 
           {/* Title Section */}
-          <h2 className="text-xl font-bold text-white mb-2">Development</h2>
-          <p className="text-sm text-[#A1A1A1] mb-16  tracking-wide font-normal">
-            Building brands that go beyond the ordinary, powered by innovation
-            and bold ideas."
+          <h2 className="lg:text-[22px] text-xl font-semibold text-white mb-2">
+            Development
+          </h2>
+          <p className="text-sm text-[#A1A1A1] mb-12 lg:mb-16 tracking-normal font-medium">
+            Building brands that go beyond the ordinary, powered by innovation and bold ideas.
           </p>
 
           {/* Button */}
-          <div className="flex justify-center ">
-            <button className="w-[296px] h-[39px]  bg-[#FFFFFF] text-[#000000] py-2 rounded-lg text-sm font-medium mb-4 ">
+          <div className="flex justify-center">
+            <button className="w-full max-w-[296px] h-[39px] bg-[#FFFFFF] text-[#000000] py-2 rounded-lg text-sm font-medium">
               Let’s Connect
             </button>
           </div>
 
           {/* Features List */}
-          <ul className="text-sm  space-y-6 font-semibold text-[#E0E0E0] mt-4">
+          <ul className="text-sm space-y-6 font-medium text-[#E0E0E0] mt-8">
             <li>Social media posts</li>
-            <li>background Design</li>
+            <li>Background Design</li>
             <li>Thumbnail Design</li>
             <li>Flyers Design</li>
             <li>Logo / Identity Design</li>
@@ -111,15 +113,15 @@ const Production = () => {
         </div>
       </div>
 
-      <div className="lg:w-[937px] lg:h-[46px] w-fit h-fit container mx-auto lg:mt-40 mt-96 text-center tracking-wide">
+      {/* Discover Markitify Section */}
+      <div className="lg:w-[937px] w-full max-w-[343px] lg:h-[46px] h-auto container mx-auto lg:mt-40 mt-20 px-4 text-center">
         <p className="text-[12px] font-medium">
-          Discover Markitify’s expert post-production services, specializing in
-          stunning graphic design and professional video editing. Elevate your
-          brand with captivating visuals and impactful videos. Contact us today!
+          Discover Markitify’s expert post-production services, specializing in stunning graphic design and professional video editing. Elevate your brand with captivating visuals and impactful videos. Contact us today!
         </p>
       </div>
 
-      <div className="lg:mt-56 mt-[1050px] container mx-auto text-center flex flex-col items-center h-auto lg:h-[360px] ">
+      {/* What You Will Get Section */}
+      <div className="lg:mt-40 mt-20 container mx-auto text-center flex flex-col items-center h-auto lg:h-[360px]">
         <h1 className="text-[14px] font-bold text-[#4A4A4A] mb-10">
           What you will get
         </h1>
@@ -148,17 +150,18 @@ const Production = () => {
           </div>
           <div className="flex flex-wrap gap-4 sm:gap-6 justify-center mt-4">
             <div className="text-[14px] font-semibold bg-[#F2F2F2] px-4 sm:px-6 py-1 border-2 border-dashed rounded-lg">
-            storytelling
+              Storytelling
             </div>
             <div className="text-[14px] font-semibold bg-[#F2F2F2] px-4 sm:px-6 py-1 border-2 border-dashed rounded-lg">
-            Influence
+              Influence
             </div>
             <div className="text-[14px] font-semibold bg-[#F2F2F2] px-4 sm:px-6 py-1 border-2 border-dashed rounded-lg">
-            brandingF
+              Branding
             </div>
           </div>
         </div>
       </div>
+
 
       <div className="lg:mt-2 mt-60 mb-44 container mx-auto text-center flex flex-col items-center">
         <h1 className="text-2xl lg:text-3xl font-bold text-[#4A4A4A] mb-10">

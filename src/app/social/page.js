@@ -16,39 +16,36 @@ const SocialPage = () => {
     <div>
       <Navbar />
 
-      <div className="container mx-auto backdrop-opacity-10 h-[584px] w-full lg:w-[1341px] mt-24 bg-[linear-gradient(to_right,#80808012_3px,transparent_6px),linear-gradient(to_bottom,#80808012_3px,transparent_6px)] bg-[size:66px_66px]">
-        <div className="flex lg:flex-row lg:w-full lg:h-[584px]  pt-16 lg:justify-between lg:items-center flex-col w-full items-center lg:text-left text-center ">
+      <div className="container mx-auto backdrop-opacity-10 lg:h-[584px] w-full lg:w-[1341px] mt-24 bg-[linear-gradient(to_right,#80808012_3px,transparent_6px),linear-gradient(to_bottom,#80808012_3px,transparent_6px)] bg-[size:66px_66px]">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-16 w-full text-center lg:text-left">
           {/* Heading Section */}
           <div className="mb-8 lg:mb-0">
-            <h1 className="text-4xl sm:text-4xl lg:text-6xl font-semibold lg:w-[892px] lg:h-[219px] leading-tight lg:pl-10">
-              Revolutionizing Feeds, Redefining Connections,Social Media Done
-              Right
+            <h1 className="text-2xl sm:text-3xl lg:text-6xl font-semibold lg:w-[892px] lg:h-[219px] leading-tight lg:pl-10">
+              Revolutionizing Feeds, Redefining Connections, Social Media Done Right
             </h1>
-            <p className="text-sm sm:text-[16px]  lg:h-[69px] lg:w-[450px] lg:mt-8  font-medium mt-4 mx-8">
-              We craft engaging strategies and content to elevate your brand,
-              foster connections, and drive impactful results across all
-              platforms.
+            <p className="text-sm sm:text-[16px] lg:h-[69px] lg:w-[450px] lg:mt-8 font-medium mt-4 mx-8">
+              We craft engaging strategies and content to elevate your brand, foster connections, and drive impactful results across all platforms.
             </p>
           </div>
 
           {/* Image Section */}
-          <div className="h-[300px] sm:h-[343px] w-[300px] sm:w-[343px] lg:w-[663px] lg:h-[663px]  mt-96">
+          <div className="h-[250px] sm:h-[300px] lg:h-[663px] w-[250px] sm:w-[300px] lg:w-[663px] mt-16 lg:mt-0">
             <Image
               src={design}
               alt="logo"
               width={663}
               height={663}
-              className="lg:pt-24"
+              className="mx-auto"
             />
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto  h-[584px] lg:w-[1341px] mt-56 flex lg:flex-row lg:justify-center lg:gap-10 flex-col gap-12">
-        <div className="w-[343px] h-[452px]  bg-gradient-to-b from-[#000000] to-[#393939] text-white  shadow-2xl rounded-xl p-6 mx-auto">
+      <div className="container mx-auto lg:h-[584px] w-full lg:w-[1341px] mt-16 lg:mt-56 flex flex-col lg:flex-row gap-12 lg:gap-10">
+        <div className="lg:w-[440px] lg:h-[580px] w-[343px] h-[480px] bg-gradient-to-b from-[#000000] to-[#393939] text-white shadow-2xl rounded-xl p-6 font-sans mx-auto">
           {/* Icon Section */}
-          <div className="flex justify-start mb-4 ">
-            <div className="bg-gray-100 p-3 rounded-full">
+          <div className="flex justify-start mb-4">
+            <div className="bg-[#5A5A5A] p-3 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -67,21 +64,20 @@ const SocialPage = () => {
           </div>
 
           {/* Title Section */}
-          <h2 className="text-[22px] font-bold mb-2">Instagram 360</h2>
-          <p className="text-[12px] text-[#A1A1A1] mb-16  tracking-wide font-normal">
-            Building brands that go beyond the ordinary, powered by innovation
-            and bold ideas."
+          <h2 className="text-[22px] font-bold text-white mb-2">Instagram 360</h2>
+          <p className="text-[12px] text-[#A1A1A1] mb-10 tracking-wider font-normal">
+            Building brands that go beyond the ordinary, powered by innovation and bold ideas.
           </p>
 
-          {/* Button */}
-          <div className="flex justify-center ">
-            <button className="w-[296px] h-[36px]  bg-[#FFFFFF] text-[#000000] py-2 rounded-lg text-sm font-medium mb-6 ">
+          <div className="w-full flex justify-center">
+            {/* Button */}
+            <button className="bg-[#FFFFFF] text-black py-2 px-24 rounded-lg text-sm font-semibold mb-8">
               Let’s Connect
             </button>
           </div>
 
           {/* Features List */}
-          <ul className="text-[14px]  space-y-4 font-semibold">
+          <ul className="text-[14px] space-y-6 font-semibold text-[#E0E0E0]">
             <li>Content Creation</li>
             <li>Reels and Video Production</li>
             <li>Content Strategy and Planning</li>
@@ -180,15 +176,16 @@ const SocialPage = () => {
         </div>
       </div>
 
-      <div className="lg:w-[924px] lg:h-[46px] container mx-auto mt-40 text-center tracking-wide">
+      <div className="lg:w-[924px] lg:h-[46px] container mx-auto mt-16 lg:mt-40 text-center tracking-wide">
         <p className="text-[12px] font-medium">
           Boost your brand’s social media with Markitify's expert management
           services. Engage audiences, drive growth, and achieve measurable
-          results. Get started today!"
+          results. Get started today!
         </p>
       </div>
 
-      <div className="lg:mt-56 mt-[1050px] container mx-auto text-center flex flex-col items-center h-auto lg:h-[500px]">
+
+      <div className="mt-20 lg:mt-56 container mx-auto text-center flex flex-col items-center h-auto lg:h-[500px]">
         <h1 className="text-3xl font-bold text-[#4A4A4A] mb-10">
           What you will get
         </h1>
@@ -228,6 +225,7 @@ const SocialPage = () => {
           </div>
         </div>
       </div>
+
 
       <div className="lg:mt-16 mt-60 mb-44 container mx-auto text-center flex flex-col items-center">
         <h1 className="text-2xl lg:text-3xl font-bold text-[#4A4A4A] mb-10">
@@ -302,7 +300,7 @@ const SocialPage = () => {
       </div>
 
       <Footer />
-    </div>
+    </div >
   );
 };
 
