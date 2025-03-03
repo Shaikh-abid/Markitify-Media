@@ -26,21 +26,38 @@ export default function QuotationForm() {
     e.preventDefault();
 
     console.log("formData", formData);
-    const result = await submitFormAction(formData);
-    setResponseMessage(result.message);
 
-
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        findMore: "",
-        services: "",
-        features: "",
-        budget: "",
-        projectGoal: "",
+    try {
+      const response = await fetch("/api/submitForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-    document.getElementById("my_modal_3").showModal();
+
+      const result = await response.json();
+      setResponseMessage(result.message);
+
+      if (result.success) {
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          findMore: "",
+          services: "",
+          features: "",
+          budget: "",
+          projectGoal: "",
+        });
+      }
+
+      document.getElementById("my_modal_3").showModal();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setResponseMessage("Server error! Please try again.");
+      document.getElementById("my_modal_3").showModal();
+    }
   };
 
   const handleChange = (e) => {
@@ -76,10 +93,10 @@ export default function QuotationForm() {
 
             <p className="text-gray-300 text-[14px] leading-6 md:w-[479px] md:h-[140px]">
               Once you submit the form, our team will carefully review your
-              responses and craft a detailed&apos; transparent quotation tailored to
-              your needs. Within 24-48 hours&apos; you&apos;ll receive a clear plan
-              outlining the scope&apos; deliverables&apos; and costs, helping you make an
-              informed decision with confidence.
+              responses and craft a detailed&apos; transparent quotation
+              tailored to your needs. Within 24-48 hours&apos; you&apos;ll
+              receive a clear plan outlining the scope&apos; deliverables&apos;
+              and costs, helping you make an informed decision with confidence.
             </p>
 
             <p className="text-gray-300 text-sm leading-6 md:w-[479px] md:h-[84px]">
