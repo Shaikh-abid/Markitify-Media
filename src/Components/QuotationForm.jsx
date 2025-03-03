@@ -76,9 +76,9 @@ export default function QuotationForm() {
 
             <p className="text-gray-300 text-[14px] leading-6 md:w-[479px] md:h-[140px]">
               Once you submit the form, our team will carefully review your
-              responses and craft a detailed, transparent quotation tailored to
-              your needs. Within 24-48 hours, you'll receive a clear plan
-              outlining the scope, deliverables, and costs, helping you make an
+              responses and craft a detailed&apos; transparent quotation tailored to
+              your needs. Within 24-48 hours&apos; you&apos;ll receive a clear plan
+              outlining the scope&apos; deliverables&apos; and costs, helping you make an
               informed decision with confidence.
             </p>
 

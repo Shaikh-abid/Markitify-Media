@@ -16,7 +16,7 @@ const Hero = () => {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center ">
           <h1 className="font-sans font-medium md:text-[60px] text-[30px] mb-6">
-            Let's build <br />
+            Let &apos; s build <br />
             <span className="inline-block">your brand together</span>
           </h1>
 
@@ -24,8 +24,8 @@ const Hero = () => {
             {/* Text Section */}
             <div className="flex justify-center items-center h-auto lg:h-full">
               <p className="max-w-[349px] max-h-[81px] font-medium md:text-[16px] md:text-left font-[Inter] text-[12px] ">
-                Building brands that go beyond the ordinary, <br /> 3 years of
-                serving.
+                Building brands that go beyond the ordinary &apos; <br /> 3
+                years of serving.
               </p>
             </div>
 
@@ -42,7 +42,10 @@ const Hero = () => {
 
             {/* Button Section */}
             <div className="flex lg:justify-center lg:items-center items-start justify-center lg:h-full">
-              <Link href={"/call"} className="bg-black text-white px-4 py-2 rounded-lg text-sm sm:text-base font-medium hover:bg-gray-800">
+              <Link
+                href={"/call"}
+                className="bg-black text-white px-4 py-2 rounded-lg text-sm sm:text-base font-medium hover:bg-gray-800"
+              >
                 Get the brochure
               </Link>
             </div>

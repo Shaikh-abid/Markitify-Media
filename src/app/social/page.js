@@ -78,7 +78,7 @@ const SocialPage = () => {
           <h2 className="text-[22px] font-semibold mb-2">Instagram 360</h2>
           <p className="text-[12px] text-[#A1A1A1] mb-16  tracking-wide font-medium fonr-[Inter]">
             Building brands that go beyond the ordinary, powered by innovation
-            and bold ideas."
+            and bold ideas.
           </p>
 
           {/* Button */}
@@ -116,7 +116,7 @@ const SocialPage = () => {
           <h2 className="text-[22px] font-semibold text-white mb-2">Youtube</h2>
           <p className="text-[12px] text-[#A1A1A1] mb-10  tracking-wider font-medium  font-[Inter]">
             Building brands that go beyond the ordinary, powered by innovation
-            and bold ideas."
+            and bold ideas.
           </p>
 
           <div className="w-full flex justify-center">
@@ -153,7 +153,7 @@ const SocialPage = () => {
           <h2 className="text-[22px] font-semibold mb-2">Linkedin</h2>
           <p className="text-[12px] text-[#A1A1A1] mb-16  tracking-wide font-medium fonr-[Inter]">
             Building brands that go beyond the ordinary, powered by innovation
-            and bold ideas."
+            and bold ideas.
           </p>
 
           {/* Button */}
@@ -175,8 +175,8 @@ const SocialPage = () => {
 
       <div className="lg:w-[924px] lg:h-[46px] container mx-auto mt-16 lg:mt-40 text-center tracking-wide">
         <p className="text-[12px] font-medium">
-          Boost your brand’s social media with Markitify's expert management
-          services. Engage audiences, drive growth, and achieve measurable
+          Boost your brand &apos;s social media with Markitify&apos;s expert management
+          services. Engage audiences &apos; drive growth&apos; and achieve measurable
           results. Get started today!
         </p>
       </div>

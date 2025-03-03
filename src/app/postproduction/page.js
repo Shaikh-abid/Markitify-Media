@@ -116,7 +116,7 @@ const Demo = () => {
           </h2>
           <p className="text-[12px] font-[Inter] text-[#A1A1A1] lg:mb-20 mb-4  tracking-wide font-normal">
             Building brands that go beyond the ordinary, powered by innovation
-            and bold ideas."
+            and bold ideas.
           </p>
 
           {/* Button */}
