@@ -1,15 +1,15 @@
 "use client";
 
-import Companies from "@/components/Companies";
+import Companies from "@/Components/Companies";
 import ContactandFAQ from "@/Components/ContactandFAQ";
 import Demo from "@/Components/Demo";
 import Footer from "@/Components/Footer";
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
+import Hero from "@/Components/Hero";
+import Navbar from "@/Components/Navbar";
 import Portfolio from "@/Components/Portfolio";
-import Quotation from "@/components/Quotation";
-import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
+import Quotation from "@/Components/Quotation";
+import Services from "@/Components/Services";
+import Testimonials from "@/Components/Testimonials";
 
 export default function Home() {
   return (
