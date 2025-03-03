@@ -6,7 +6,6 @@ import Image from "next/image";
 import logo from "@/app/logo.jpg";
 import Link from "next/link";
 
-import { submitFormAction } from "@/app/actions/formActions";
 
 export default function QuotationForm() {
   const [formData, setFormData] = useState({
